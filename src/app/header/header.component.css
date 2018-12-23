@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.nav-div{
+
+    height: 85px;
+
+}
+
+nav{
+
+    background: linear-gradient(153deg,#00a0a0 0,#6500fc 42%,#9617c9 75%,#d33092 100%) right bottom no-repeat;
+    height: 85px;
+    width: 100%;
+    z-index: 9998;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav__links {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    margin-left: 450px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+.nav__link {
+    height: 36px;
+    margin-bottom: 0px;
+    padding-right: 13px;
+    padding-left: 13px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    color: #ffffff;
+    font: italic bold 20px Georgia, serif;
+    line-height: 37px;
+    font-weight: 500px;
+}
+  
+.nav__link:hover {
+color: #1e1e1e;
+}
+
+.logo{
+    margin-left: 70px;
+    height: 25px;
+}
+.logo2{
+    margin-top: -10px;
+    height: 18px;
+}
+
+.nav__icon{
+
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+}
+
+.nav__icon:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+  

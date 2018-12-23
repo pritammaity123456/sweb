@@ -1,0 +1,33 @@
+a{
+    
+    color: #516a7b;
+
+}
+
+a:hover{
+
+    text-decoration: none;
+    color: #8897a1;
+
+}
+
+strong{
+    margin-left: 40px;
+    color: aqua;
+}
+
+ul {
+    margin-top: 25px;
+}
+li{
+    padding-bottom: 8px;
+    list-style:none;
+
+}
+
+.footer{
+    padding: 50px;
+    background-color: #09181e;
+    color: #516a7b;
+    height: 350px;
+}
