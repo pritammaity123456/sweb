@@ -38,6 +38,7 @@ nav{
     margin-bottom: 0px;
     padding-right: 13px;
     padding-left: 13px;
+    padding-bottom: 25px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -47,19 +48,28 @@ nav{
     line-height: 37px;
     font-weight: 500px;
 }
-  
+
 .nav__link:hover {
-color: #1e1e1e;
+color: #ffffff;
+
 }
+
+.nav__link:hover {
+    border-bottom: 4px solid rgb(8, 252, 0);
+    cursor: pointer;
+}
+
 
 .logo{
     margin-left: 70px;
     height: 25px;
 }
+
 .logo2{
     margin-top: -10px;
     height: 18px;
 }
+
 
 .nav__icon{
 
@@ -72,6 +82,13 @@ color: #1e1e1e;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.nav__icon:hover{
+
+    color: #ffffff;
 }
 
 @keyframes bounce {

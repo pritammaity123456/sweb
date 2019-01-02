@@ -1,19 +1,26 @@
 a{
     
-    color: #516a7b;
+    color: white;
 
 }
 
 a:hover{
 
     text-decoration: none;
-    color: #8897a1;
+    color: white;
 
 }
 
 strong{
     margin-left: 40px;
     color: aqua;
+    padding-bottom: 8px;
+}
+
+.strong-label{
+    border-bottom: 2px solid white;
+    right: 10px;
+    cursor: pointer;
 }
 
 ul {
@@ -22,12 +29,32 @@ ul {
 li{
     padding-bottom: 8px;
     list-style:none;
-
+    font-size: 12px;
 }
 
 .footer{
     padding: 50px;
     background-color: #09181e;
     color: #516a7b;
-    height: 350px;
+    height: 250px;
+}
+
+.foot{
+    background: none repeat scroll 0 0 #101214;
+    padding: 15px 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.logo{
+    margin-left: 70px;
+    height: 25px;
+}
+.logo2{
+    margin-top: -5px;
+    height: 18px;
+    color: white;
+    font-style: italic;
 }
