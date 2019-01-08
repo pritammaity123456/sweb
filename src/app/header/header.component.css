@@ -5,9 +5,8 @@ a:hover{
     text-decoration: none;
 }
 
-nav{
-
-    background: linear-gradient(153deg,#00a0a0 0,#6500fc 42%,#9617c9 75%,#d33092 100%) right bottom no-repeat;
+.navbar{
+    background: linear-gradient(153deg,#12099bdb 0,#6500fccf 42%,#9617c9d4 75%,#d33092bf 100%) right bottom no-repeat;
     height: 80px;
     width: 100%;
     z-index: 9998;

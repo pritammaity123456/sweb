@@ -1,4 +1,4 @@
-<div class="nav-div">
+<div class="nav-div" (scroll)="scrollHandler($event)">
 
   <nav class="navbar collapsing navbar-light">
 
@@ -29,4 +29,23 @@
       </div> 
       
   </nav>
+
 </div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("nav-div");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("navbar");
+      console.log('yes');
+    } else {
+      header.classList.remove("navbar");
+      console.log('no');
+
+    }
+  }
+</script>
