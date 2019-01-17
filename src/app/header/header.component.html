@@ -1,33 +1,38 @@
-<div class="nav-div">
+<div class="header">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-xs-6">
+          <ul>
+            <li><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> +91 33 2424 4745</li>
+            <li><i class="fa fa-whatsapp" aria-hidden="true"></i> +91 9903044748</li>  
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6">
+            <ul>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@synergicsoftek.com</li>
+            </ul>    
+        </div>
+    </div>
+  </div>
+</div>
 
-  <nav class="navbar collapsing navbar-light">
+<div class="nav-div" (scroll)="scrollHandler()">
 
-    <a class="navbar-brand" href="/"><img src="../../assets/sss.png" class="logo" alt="logo"><br><img src="../../assets/synergic.png" class="logo2" alt="logo"></a>
-  
-      <div class="nav__links">
-        
-        <a class="nav__link" href="#">Clients</a>
-        <a class="nav__link" href="#">Projects</a>
-        <a class="nav__link" href="#">Contact Us</a>
-        <a class="nav__link" href="#">Caeer</a>
-  
+  <nav class="navbar collapsing navbar-light" [style.top.px]="tempVar ? 0 : 35">
+
+      <div class="col-lg-4 col-md-4 col-xs-5">
+          <a class="navbar-brand" href="/"><img src="../../assets/sss.png" class="logo" alt="logo"><br><img src="../../assets/synergic.png" class="logo2" alt="logo"></a>
       </div>
-  
-      <div style="margin-right: 10px;">
-        
-        <a class="nav__icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      </div>
-      
-      <div style="margin-right: 10px;">
-        
-          <a class="nav__icon" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-        
-      <div style="margin-right: 50px;">
-        
-          <a class="nav__icon" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <div class="col-lg-6 col-md-6 col-xs-5">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link" href="#">Service</a>
+          <a class="nav__link" href="#">Technology</a>
+          <a class="nav__link" href="#">About Us</a>
+          <a class="nav__link" href="#">Caeer</a>
       </div> 
-      
+      <div class="col-lg-2 col-md-2 col-xs-2">
+          <a href="#" class="enquiry">Project Enquiry</a>
+      </div>   
   </nav>
 
 </div>
