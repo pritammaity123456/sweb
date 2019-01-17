@@ -18,7 +18,10 @@
 
 <div class="nav-div" (scroll)="scrollHandler()">
 
-  <nav class="navbar collapsing navbar-light" [style.top.px]="tempVar ? 0 : 35">
+  <nav class="navbar collapsing navbar-light" [ngStyle]="{
+                                                            'top': tempVar ? '0px' : '35px',
+                                                            'height': tempVar ? '70px' : '85px'
+                                                         }">
 
       <div class="col-lg-4 col-md-4 col-xs-5">
           <a class="navbar-brand" href="/"><img src="../../assets/sss.png" class="logo" alt="logo"><br><img src="../../assets/synergic.png" class="logo2" alt="logo"></a>

@@ -37,7 +37,6 @@ li{
 
 .navbar{
     background: linear-gradient(153deg,#12099bdb 0,#6500fccf 42%,#9617c9d4 75%,#d33092bf 100%) right bottom no-repeat;
-    height: 80px;
     width: 100%;
     z-index: 9998;
     position: fixed;
@@ -50,11 +49,12 @@ li{
     -ms-flex-align:center;
     align-items:center;
     border-radius:50px;
-    font: bold 17px;
+    font: italic bold 17px Georgia, serif;
+    font: bold 19px;
     border:none;
     text-decoration:none;
     padding:12px 15px;
-    background-color:#45C14E;
+    background-color:#21c251;
     color:#ffffff;
 }
 .nav__link {
@@ -68,7 +68,7 @@ li{
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     color: #ffffff;
-    font: italic bold 17px Georgia, serif;
+    font: italic bold 18px Georgia, serif;
     line-height: 37px;
 }
 

@@ -1,13 +1,13 @@
-<ngb-carousel>
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
   <ng-template ngbSlide *ngFor="let image of images">
-    <img [src]="image.path" alt="Random first slide" class="car-img">
+    <img [src]="image.path" alt="Random slide" class="car-img">
     <div class="carousel-caption">
       <h3>{{image.head}}</h3>
       <p>{{image.description}}</p>
     </div>
   </ng-template>
 </ngb-carousel>
-
+  
 <div class="container">
   <div class="row section-header">
     <div class="col-md-12 col-sm-12 col-xs-12">
