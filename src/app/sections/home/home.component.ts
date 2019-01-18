@@ -10,27 +10,26 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 export class HomeComponent {
 
   showNavigationArrows = false;
-  showNavigationIndicators = false;
+  showNavigationIndicators = true;
 
   images:any = [
 
     {
       head: 'Get on the right track with us',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis at risus blandit placerat. Mauris convallis, ligula eu lobortis elementum, diam neque eleifend ipsum, et consequat neque est non nibh. Mauris viverra pharetra mi, ',
+      description: 'Lorem ipsum dolor sit amet',
       path: '../../../assets/img1.jpg'
     },
     {
       head: 'We know your project\'s value',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis at risus blandit placerat. Mauris convallis, ligula eu lobortis elementum, diam neque eleifend ipsum, et consequat neque est non nibh. Mauris viverra pharetra mi, ',
+      description: 'Lorem ipsum dolor sit amet',
       path: '../../../assets/img2.jpg'
     },
     {
       head: 'Looking Forward for mobile application',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate felis at risus blandit placerat. Mauris convallis, ligula eu lobortis elementum, diam neque eleifend ipsum, et consequat neque est non nibh. Mauris viverra pharetra mi, ',
+      description: 'Lorem ipsum dolor sit amet',
       path: '../../../assets/img3.jpg'
     }
 
   ];
-
 
 }

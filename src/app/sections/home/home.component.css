@@ -1,5 +1,5 @@
 p{
-  color: #fefefe;
+  color: #083b50;
 }
 
 .car-img{
@@ -14,8 +14,8 @@ p{
 
 .services-head h1{
   font-family: 'Raleway';
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 30px;
   color: #083b50;
   text-transform: uppercase;
 }
@@ -26,18 +26,97 @@ p{
 }
 
 .section-header {
-  margin-top: 150px;
+  margin-top: 85px;
 }
 .section-body {
   margin-top: 50px;
+  width: 100%;
 }
-
-.section-body h4{
-  margin-top: 20px;
-}
-
 
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
+.carousel{
+  background: linear-gradient(153deg,#130788 0,#5900c0 42%,#3a1d45 75%,#b03fa2 100%) right bottom no-repeat;
+  border: none;
+}
+
+.carousel-caption {
+  top: 245px;
+  left: 5px;
+  right: 0px;
+  text-align: left;
+}
+
+.style1 h2, h4 {
+  margin-left: 0;
+  background-color: transparent;
+  position: relative;
+  animation: moveright .7s 1;
+  animation-fill-mode: forwards;
+}
+.style2 h2, h4 {
+  margin-left: 0;
+  background-color: transparent;
+  position: relative;
+  animation: moveup .7s 1;
+  animation-fill-mode: forwards;
+}
+.style3 h4, h2 {
+  margin-left: 0;
+  background-color: transparent;
+  position: relative;
+  animation: movedown .7s 1;
+  animation-fill-mode: forwards;
+}
+#image {
+  
+  position: relative;
+  animation: moveleft .7s 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes moveright {
+  from {right: -1000px;}
+  to {right: -50px;}
+}
+@keyframes moveleft {
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+
+@keyframes moveup {
+  from {top: 1000px; right: -50px;}
+  to {top: 0px; right: -50px;}
+}
+
+@keyframes movedown {
+  from {top: -1000px; right: -50px;}
+  to {top: 0px; right: -50px;}
+}
+
+#image4{
+  height: 350px;
+  box-shadow: 14px 16px 19px 0 rgba(0, 0, 0, 0.2), 10px 6px 100px 0px rgba(0, 0, 0, 0.19);
+
+}
+
+.single-services{
+  margin-left: 65px;
+  text-align: left;
+}
+.single-services h5{
+  color: #1702ba;
+  padding: 0;
+}
+
+.single-services span{
+  color: #0065ff;
+  width: 50%;
+  position: absolute;
+  line-height: 40px;
+}
+

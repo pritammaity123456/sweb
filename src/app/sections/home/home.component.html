@@ -1,18 +1,20 @@
-<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-  <ng-template ngbSlide *ngFor="let image of images">
-    <img [src]="image.path" alt="Random slide" class="car-img">
-    <div class="carousel-caption">
-      <h3>{{image.head}}</h3>
-      <p>{{image.description}}</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+<div class="carousel">
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let image of images; let i = index">
+      <img id="image" [src]="image.path" alt="Random slide" class="car-img">
+      <div class="carousel-caption style{{i+1}}">
+        <h2 id="head{{i+1}}">{{image.head}}</h2>
+        <h4 id="decription{{i+1}}">{{image.description}}</h4>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
   
 <div class="container">
   <div class="row section-header">
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="services-head text-center">
-        <h1>Our Services</h1>
+        <h1>Who we are?</h1>
         <p>
           praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br> Voluptatem accusantium doloremque laudantium sprea totam rem aperiam
         </p>
@@ -20,36 +22,15 @@
     </div>
   </div>
   <div class="row section-body text-center">
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-            <i class="fa fa-wordpress fa-3x"></i>
-          </a>
-        <h4>Wordpress Developer</h4>
-        <p>
-          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-        </p>
-      </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <img id="image4" src="../../../assets/img4.jpg" alt="Random slide" class="car-img">      
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="single-services">
-        <a class="services-icon" href="#">
-            <i class="fa fa-wordpress fa-3x"></i>
-          </a>
-        <h4>Wordpress Developer</h4>
+        <span>_________________________</span>
+        <h5>Get Best Quality Project from Leading Company</h5>
         <p>
-          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-            <i class="fa fa-wordpress fa-3x"></i>
-          </a>
-        <h4>Wordpress Developer</h4>
-        <p>
-          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
     </div>
@@ -59,42 +40,31 @@
   <div class="row section-header">
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="services-head text-center">
-        <h1>WHAT ARE WE DOING?</h1>
+        <h1>We Build</h1>
         <p>
-          praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br> Voluptatem accusantium doloremque laudantium sprea totam rem aperiam
+          
         </p>
       </div>
     </div>
   </div>
   <div class="row section-body text-center">
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="single-services">
         <a class="services-icon" href="#">
             <i class="fa fa-wordpress fa-3x"></i>
           </a>
-        <h4>Wordpress Developer</h4>
+        <h3>Wordpress Developer</h3>
         <p>
           will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
         </p>
       </div>
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="single-services">
         <a class="services-icon" href="#">
             <i class="fa fa-wordpress fa-3x"></i>
           </a>
-        <h4>Wordpress Developer</h4>
-        <p>
-          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-            <i class="fa fa-wordpress fa-3x"></i>
-          </a>
-        <h4>Wordpress Developer</h4>
+        <h3>Wordpress Developer</h3>
         <p>
           will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
         </p>
