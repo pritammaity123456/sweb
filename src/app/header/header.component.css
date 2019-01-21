@@ -13,7 +13,12 @@ a:hover{
     height: 35px;
     padding: 8px;
 }
-
+.leftul{
+    float: left;
+}
+.rightul{
+    float: right;
+}
 ul{
     list-style: none;
     margin: 0;
