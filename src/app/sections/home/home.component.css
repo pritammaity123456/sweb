@@ -4,12 +4,16 @@ p{
 
 .car-img{
   width: 100%;
-  height: 785px;
+  height: 630px;
 }
 
 .container {
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+h1 span{
+  color: #a31c98;
 }
 
 .services-head h1{
@@ -31,15 +35,40 @@ p{
 .section-body {
   margin-top: 50px;
   width: 100%;
+  text-align: justify;
 }
 
+.section{
+  height: 325px;
+  border: 1px solid #f6f6f6;
+  flex: 1;
+  padding: 6px;
+  margin: 25px;
+  border-radius: 4px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.sec-icon{
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+
+.sec-icon:hover{
+  animation:spin 0.3s linear 1;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.section h3{
+  text-align: center;
+}
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
 .carousel{
-  background: linear-gradient(153deg,#130788 0,#5900c0 42%,#3a1d45 75%,#b03fa2 100%) right bottom no-repeat;
+  background: #fff;
   border: none;
 }
 
@@ -72,7 +101,6 @@ p{
   animation-fill-mode: forwards;
 }
 #image {
-  
   position: relative;
   animation: moveleft .7s 1;
   animation-fill-mode: forwards;
@@ -100,8 +128,8 @@ p{
 
 #image4{
   height: 350px;
-  box-shadow: 14px 16px 19px 0 rgba(0, 0, 0, 0.2), 10px 6px 100px 0px rgba(0, 0, 0, 0.19);
-
+  /* box-shadow: 14px 16px 19px 0 rgba(0, 0, 0, 0.2), 10px 6px 100px 0px rgba(0, 0, 0, 0.19); */
+  box-shadow: 5px 11px 6px -2px black;
 }
 
 .single-services{

@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,8 +7,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
+  environment:string =  environment.baseUrl;
+  
   public tempVar = false;
-
   constructor() { }
 
   @HostListener('window:scroll', ['$event'])

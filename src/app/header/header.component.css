@@ -1,7 +1,4 @@
-a{
-    text-decoration: none;
-}
-a:hover{
+a, a:hover{
     text-decoration: none;
 }
 
@@ -44,7 +41,6 @@ li{
 }
 
 .enquiry {
-    
     justify-content:center;
     -ms-flex-align:center;
     align-items:center;
@@ -70,10 +66,9 @@ li{
     color: #ffffff;
     font: italic bold 18px Georgia, serif;
     line-height: 37px;
-}
-
-.nav__link:hover {
-    color: #ffffff;
+    position: relative;
+    animation: moveright .7s 1;
+    animation-fill-mode: forwards;
 }
 
 .nav__link:hover {
@@ -81,6 +76,11 @@ li{
     cursor: pointer;
 }
 
+.navbar-brand{
+    position: relative;
+    animation: moveleft .7s 1;
+    animation-fill-mode: forwards;
+}
 
 .logo{
     margin-left: 70px;
@@ -110,7 +110,7 @@ li{
 
 .nav__icon:hover{
 
-    color: #ffffff;
+    color: #0069ff;
 }
 
 @keyframes bounce {

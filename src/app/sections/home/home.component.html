@@ -5,6 +5,7 @@
       <div class="carousel-caption style{{i+1}}">
         <h2 id="head{{i+1}}">{{image.head}}</h2>
         <h4 id="decription{{i+1}}">{{image.description}}</h4>
+        <button class="btn btn-warning" style="margin-left: 51px">Project Enquery</button>
       </div>
     </ng-template>
   </ngb-carousel>
@@ -14,7 +15,7 @@
   <div class="row section-header">
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="services-head text-center">
-        <h1>Who we are?</h1>
+        <h1>Who we <span>are</span>?</h1>
         <p>
           praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br> Voluptatem accusantium doloremque laudantium sprea totam rem aperiam
         </p>
@@ -23,7 +24,7 @@
   </div>
   <div class="row section-body text-center">
     <div class="col-md-6 col-sm-6 col-xs-12">
-      <img id="image4" src="../../../assets/img4.jpg" alt="Random slide" class="car-img">      
+      <img id="image4" src="{{environment}}/assets/img4.jpg" alt="Random slide" class="car-img">      
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12">
       <div class="single-services">
@@ -40,36 +41,53 @@
   <div class="row section-header">
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="services-head text-center">
-        <h1>We Build</h1>
+        <h1>We <span>Build</span></h1>
         <p>
-          
+          praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
+          Voluptatem accusantium doloremque laudantium sprea totam rem aperiam
         </p>
       </div>
     </div>
   </div>
-  <div class="row section-body text-center">
-    <div class="col-md-6 col-sm-6 col-xs-12">
-      <div class="single-services">
-        <a class="services-icon" href="#">
+  <div class="row section-body">
+    <div class="col-md-4 col-sm-6 col-xs-12 section">
+      <div class="sec-icon">
+        <a href="#">
             <i class="fa fa-wordpress fa-3x"></i>
-          </a>
+        </a>
+      </div>
+      <div>
         <h3>Wordpress Developer</h3>
         <p>
           will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
         </p>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
-      <div class="single-services">
-        <a class="services-icon" href="#">
-            <i class="fa fa-wordpress fa-3x"></i>
-          </a>
+    <div class="col-md-4 col-sm-6 col-xs-12 section">
+      <div class="sec-icon">
+        <a href="#">
+            <i class="fa fa-tasks fa-3x"></i>
+        </a>
+      </div>
+      <div>
         <h3>Wordpress Developer</h3>
         <p>
           will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
         </p>
       </div>
     </div>
-    
+    <div class="col-md-4 col-sm-6 col-xs-12 section">
+      <div class="sec-icon">
+        <a href="#">
+            <i class="fa fa-cog fa-3x"></i>
+        </a>
+      </div>
+      <div>
+        <h3>Wordpress Developer</h3>
+        <p>
+          will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
