@@ -126,6 +126,9 @@ h1 span{
   to {top: 0px; right: -50px;}
 }
 
+.single-services p {
+  text-align: justify;
+}
 #image4{
   height: 350px;
   /* box-shadow: 14px 16px 19px 0 rgba(0, 0, 0, 0.2), 10px 6px 100px 0px rgba(0, 0, 0, 0.19); */
@@ -143,7 +146,7 @@ h1 span{
 
 .single-services span{
   color: #0065ff;
-  width: 50%;
+  width: 10%;
   position: absolute;
   line-height: 40px;
 }
